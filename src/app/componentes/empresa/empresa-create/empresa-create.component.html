@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>Cadastro de Empresa</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="empresa.nome" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email" [(ngModel)]="empresa.email" name="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cnpj" [(ngModel)]="empresa.cnpj" name="cnpj">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="criarEmpresa()" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancelar()">
+        Cancelar
+    </button>
+</mat-card>

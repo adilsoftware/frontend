@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>Cadastro de Estudante</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="estudante.nome" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF" [(ngModel)]="estudante.cpf" name="cpf">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="E-mail" [(ngModel)]="estudante.email" name="email">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="criarEstudante()" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancelar()">
+        Cancelar
+    </button>
+</mat-card>

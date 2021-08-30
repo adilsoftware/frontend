@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>Confirma exclusão do registro?</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Produto" [(ngModel)]="produto.produto" name="produto" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Marca" [(ngModel)]="produto.marca" name="marca" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="delete()" color="warn">
+        Excluir
+    </button>
+    <button mat-raised-button (click)="cancelar()">
+        Cancelar
+    </button>
+</mat-card>
